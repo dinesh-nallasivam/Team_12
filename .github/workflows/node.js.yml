@@ -26,5 +26,5 @@ jobs:
       # with:
       #   node-version: ${{ matrix.node-version }}
       #   cache: 'npm'
-    - run: docker build -t doc_image
+    - run: docker build -t doc_image .
     - run: docker run -p 3000:3000 doc_image
